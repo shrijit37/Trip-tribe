@@ -1,0 +1,34 @@
+
+
+
+//page.js api call
+  useEffect(() => {
+    if (request.daysNum && request.daysNum > 10) {
+      setError({ daysNum: true });
+    } else {
+      setError({ daysNum: false });
+    }
+
+
+    if (
+      request.city &&
+      request.daysNum &&
+      request.startDate &&
+      request.daysNum <= 10
+    ) {
+      if (currentCity.current === request.city) {
+        setDisableButton(true);
+      } else {
+        setDisableButton(false);
+      }
+    }
+    if (
+      request.city === '' ||
+      request.daysNum === 0 ||
+      request.startDate === '' ||
+      (request.daysNum && request.daysNum > 10) ||
+      currentCity.current === request.city
+    ) {
+      setDisableButton(true);
+    }
+  }, [request, currentCity.current]);
