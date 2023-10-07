@@ -81,9 +81,10 @@ This will start the Next.js server in production mode.
 If you'd like to contribute to Trip Tribe, please follow these guidelines:
 
 1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and test thoroughly.
-4. Create a pull request with a clear description of your changes.
+2. Contact me at shrijitsrivastav@gmail.com
+3. Create a new branch for your feature or bug fix.
+4. Make your changes and test thoroughly.
+5. Create a pull request with a clear description of your changes.
 
 ## License
 
